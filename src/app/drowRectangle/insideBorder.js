@@ -1,7 +1,6 @@
-let insideBorder = (inst) => {
+let insideBorder = (inst, ctx) => {
 
     let drowPlan = document.getElementById(inst.id);
-    let ctx = drowPlan.getContext("2d");
 
     let currentClientWidth = drowPlan.clientWidth;
     let currentClientHeight = drowPlan.clientHeight;

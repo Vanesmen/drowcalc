@@ -48,8 +48,10 @@ function Inst(id) {
     this.straightLineDirection = true; //straightLineDirection, true - внизу/справа
 
     this.widthTurnReal = 250; //в мм
-    this.lengthSystem = 700; // Длинна системы. По умолчанию минимальная 7м. Варианты: 7м, 14м, 21м, 28м, 35м, 42м, 56м, 70м, 84м  
-    this.sistemLen = 7500;
+
+    this.drowMethod = "mechanical"; // "mechanical" "manual_system" "manual_step" "manual_system_step"
+    this.systemSLenght = []; //Объект со всеми длинами систем, по количеству длинн, определяется количество систем
+
 }
 
 export default Inst;

@@ -1,7 +1,6 @@
 //Разметка размеров w и h
-let sizeLines = (inst) => {
+let sizeLines = (inst, ctx) => {
     let drowPlan = document.getElementById(inst.id);
-    let ctx = drowPlan.getContext("2d");
 
     let currentClientWidth = drowPlan.clientWidth;
     let currentClientHeight = drowPlan.clientHeight;

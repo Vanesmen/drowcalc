@@ -1,7 +1,7 @@
 // Собираем двумерный массив координат
 let createTwo_dimensional = (xArray, roundGranMas, widthTurn, two_dimensional = []) => {
     // Находим наименьший
-    debugger
+     
     let startX;
     let endX;
     if (two_dimensional.length == 0) {

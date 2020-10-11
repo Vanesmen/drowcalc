@@ -4,9 +4,11 @@ import sizeLines from "./sizeLines";
 import insideBorder from "./insideBorder";
 import updateInputsDate from "./updateInputsDate";
 import dispatchMethod from "./dispatchMethod/dispatchMethod";
+import calcKP from "./calcKP";
 
 
 let drowRectangle = (inst, ctx) => {
+    calcKP(inst);
     let drowPlan = document.getElementById(inst.id);
 
     cleanCanvas(inst.id, ctx);

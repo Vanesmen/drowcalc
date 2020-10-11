@@ -16,16 +16,16 @@ let createProkladkaLineVertical = (inst, ctx, propX, roundGranMas) => {
         xArray.push(roundGranMas[i].X);
     }
 
-    debugger
+     
     let two_dimensionalS = createTwo_dimensional(xArray, roundGranMas, widthTurn);
-    debugger
+     
     // Проверяем на четность витков, увеличиваем ширину витков, если нечёт
     while (two_dimensionalS.length % 2 != 0) {
         widthTurn += 0.1;
-        debugger
+         
         two_dimensionalS = createTwo_dimensional(xArray, roundGranMas, widthTurn, two_dimensionalS);
     }
-    debugger
+     
     let two_dimensionalAll = createAll_demensional(xArray, roundGranMas, propX, widthTurn, two_dimensionalS);
 
     let two_dimensionalAll_last = two_dimensionalAll[two_dimensionalAll.length - 1];

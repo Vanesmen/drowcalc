@@ -49,7 +49,7 @@ function Inst(id) {
 
     this.widthTurnReal = 250; //в мм
 
-    this.drowMethod = "mechanical"; // "mechanical" "manual_system" "manual_step" "manual_system_step"
+    this.drowMethod = ""; // "mechanical" "manual_system" "manual_step" "manual_system_step"
     this.systemSLenght = []; //Объект со всеми длинами систем, по количеству длинн, определяется количество систем
 
 }

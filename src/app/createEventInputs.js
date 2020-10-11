@@ -4,7 +4,7 @@ import correspondSystemAndLenght from "./drowRectangle/correspondSystemAndLenght
 //События к инпутам
 let createEventInputs = (inst, drowFunction, ctx, drowSVGimage) => {
 
-    document.querySelectorAll("[fid]")[inst.id.slice(-1) - 2].querySelector("#widthRoom").addEventListener("change", function(event) {
+    document.querySelectorAll("[fid]")[inst.id.slice(-1) - 2].querySelector("#widthRoom").addEventListener("change", function (event) {
         // Валидация 
         if (document.querySelectorAll("[fid]")[inst.id.slice(-1) - 2].querySelector("#widthRoom").value < inst.heightRoom) {
             inst.widthRoom = inst.heightRoom;
@@ -15,7 +15,7 @@ let createEventInputs = (inst, drowFunction, ctx, drowSVGimage) => {
         drowFunction(inst, ctx);
         drowSVGimage(inst, ctx, drowFunction);
     })
-    document.querySelectorAll("[fid]")[inst.id.slice(-1) - 2].querySelector("#heightRoom").addEventListener("change", function(event) {
+    document.querySelectorAll("[fid]")[inst.id.slice(-1) - 2].querySelector("#heightRoom").addEventListener("change", function (event) {
         // Валидация
         if (document.querySelectorAll("[fid]")[inst.id.slice(-1) - 2].querySelector("#heightRoom").value > inst.widthRoom) {
             inst.heightRoom = inst.widthRoom;
@@ -27,36 +27,36 @@ let createEventInputs = (inst, drowFunction, ctx, drowSVGimage) => {
         drowSVGimage(inst, ctx, drowFunction);
     })
 
-    document.querySelectorAll("[fid]")[inst.id.slice(-1) - 2].querySelector("#dashL").addEventListener("change", function(event) {
+    document.querySelectorAll("[fid]")[inst.id.slice(-1) - 2].querySelector("#dashL").addEventListener("change", function (event) {
         inst.dashL = Number(document.querySelectorAll("[fid]")[inst.id.slice(-1) - 2].querySelector("#dashL").value);
         drowFunction(inst, ctx);
         drowSVGimage(inst, ctx, drowFunction);
     })
 
-    document.querySelectorAll("[fid]")[inst.id.slice(-1) - 2].querySelector("#dashR").addEventListener("change", function(event) {
+    document.querySelectorAll("[fid]")[inst.id.slice(-1) - 2].querySelector("#dashR").addEventListener("change", function (event) {
         inst.dashR = Number(document.querySelectorAll("[fid]")[inst.id.slice(-1) - 2].querySelector("#dashR").value);
         drowFunction(inst, ctx);
         drowSVGimage(inst, ctx, drowFunction);
     })
 
-    document.querySelectorAll("[fid]")[inst.id.slice(-1) - 2].querySelector("#dashT").addEventListener("change", function(event) {
+    document.querySelectorAll("[fid]")[inst.id.slice(-1) - 2].querySelector("#dashT").addEventListener("change", function (event) {
         inst.dashT = Number(document.querySelectorAll("[fid]")[inst.id.slice(-1) - 2].querySelector("#dashT").value);
         drowFunction(inst, ctx);
         drowSVGimage(inst, ctx, drowFunction);
     })
 
-    document.querySelectorAll("[fid]")[inst.id.slice(-1) - 2].querySelector("#dashB").addEventListener("change", function(event) {
+    document.querySelectorAll("[fid]")[inst.id.slice(-1) - 2].querySelector("#dashB").addEventListener("change", function (event) {
         inst.dashB = Number(document.querySelectorAll("[fid]")[inst.id.slice(-1) - 2].querySelector("#dashB").value);
         drowFunction(inst, ctx);
         drowSVGimage(inst, ctx, drowFunction);
     })
 
-    document.querySelectorAll("[fid]")[inst.id.slice(-1) - 2].querySelector("#tl_w").addEventListener("change", function(event) {
+    document.querySelectorAll("[fid]")[inst.id.slice(-1) - 2].querySelector("#tl_w").addEventListener("change", function (event) {
         inst.tl_w = Number(document.querySelectorAll("[fid]")[inst.id.slice(-1) - 2].querySelector("#tl_w").value);
         drowFunction(inst, ctx);
         drowSVGimage(inst, ctx, drowFunction);
     })
-    document.querySelectorAll("[fid]")[inst.id.slice(-1) - 2].querySelector("#tl_h").addEventListener("change", function(event) {
+    document.querySelectorAll("[fid]")[inst.id.slice(-1) - 2].querySelector("#tl_h").addEventListener("change", function (event) {
         inst.tl_h = Number(document.querySelectorAll("[fid]")[inst.id.slice(-1) - 2].querySelector("#tl_h").value);
         drowFunction(inst, ctx);
         drowSVGimage(inst, ctx, drowFunction);
@@ -73,12 +73,12 @@ let createEventInputs = (inst, drowFunction, ctx, drowSVGimage) => {
     // drowSVGimage(inst, ctx, drowFunction);
     // })
 
-    document.querySelectorAll("[fid]")[inst.id.slice(-1) - 2].querySelector("#bl_w").addEventListener("change", function(event) {
+    document.querySelectorAll("[fid]")[inst.id.slice(-1) - 2].querySelector("#bl_w").addEventListener("change", function (event) {
         inst.bl_w = Number(document.querySelectorAll("[fid]")[inst.id.slice(-1) - 2].querySelector("#bl_w").value);
         drowFunction(inst, ctx);
         drowSVGimage(inst, ctx, drowFunction);
     })
-    document.querySelectorAll("[fid]")[inst.id.slice(-1) - 2].querySelector("#bl_h").addEventListener("change", function(event) {
+    document.querySelectorAll("[fid]")[inst.id.slice(-1) - 2].querySelector("#bl_h").addEventListener("change", function (event) {
         inst.bl_h = Number(document.querySelectorAll("[fid]")[inst.id.slice(-1) - 2].querySelector("#bl_h").value);
         drowFunction(inst, ctx);
         drowSVGimage(inst, ctx, drowFunction);
@@ -117,12 +117,12 @@ let createEventInputs = (inst, drowFunction, ctx, drowSVGimage) => {
     // drowSVGimage(inst, ctx, drowFunction);
     // })
 
-    document.querySelectorAll("[fid]")[inst.id.slice(-1) - 2].querySelector("#rt_w").addEventListener("change", function(event) {
+    document.querySelectorAll("[fid]")[inst.id.slice(-1) - 2].querySelector("#rt_w").addEventListener("change", function (event) {
         inst.rt_w = Number(document.querySelectorAll("[fid]")[inst.id.slice(-1) - 2].querySelector("#rt_w").value);
         drowFunction(inst, ctx);
         drowSVGimage(inst, ctx, drowFunction);
     })
-    document.querySelectorAll("[fid]")[inst.id.slice(-1) - 2].querySelector("#rt_h").addEventListener("change", function(event) {
+    document.querySelectorAll("[fid]")[inst.id.slice(-1) - 2].querySelector("#rt_h").addEventListener("change", function (event) {
         inst.rt_h = Number(document.querySelectorAll("[fid]")[inst.id.slice(-1) - 2].querySelector("#rt_h").value);
         drowFunction(inst, ctx);
         drowSVGimage(inst, ctx, drowFunction);
@@ -141,19 +141,19 @@ let createEventInputs = (inst, drowFunction, ctx, drowSVGimage) => {
 
 
 
-    document.querySelectorAll("[fid]")[inst.id.slice(-1) - 2].querySelector("#rb_w").addEventListener("change", function(event) {
+    document.querySelectorAll("[fid]")[inst.id.slice(-1) - 2].querySelector("#rb_w").addEventListener("change", function (event) {
         inst.rb_w = Number(document.querySelectorAll("[fid]")[inst.id.slice(-1) - 2].querySelector("#rb_w").value);
         drowFunction(inst, ctx);
         drowSVGimage(inst, ctx, drowFunction);
     })
-    document.querySelectorAll("[fid]")[inst.id.slice(-1) - 2].querySelector("#rb_h").addEventListener("change", function(event) {
+    document.querySelectorAll("[fid]")[inst.id.slice(-1) - 2].querySelector("#rb_h").addEventListener("change", function (event) {
         inst.rb_h = Number(document.querySelectorAll("[fid]")[inst.id.slice(-1) - 2].querySelector("#rb_h").value);
         drowFunction(inst, ctx);
         drowSVGimage(inst, ctx, drowFunction);
     })
 
     //Поле выбора метода расчета
-    document.querySelectorAll("[fid]")[inst.id.slice(-1) - 2].querySelector("#choiseMethod").addEventListener("change", function(event) {
+    document.querySelectorAll("[fid]")[inst.id.slice(-1) - 2].querySelector("#choiseMethod").addEventListener("change", function (event) {
         inst.drowMethod = document.querySelectorAll("[fid]")[inst.id.slice(-1) - 2].querySelector("#choiseMethod").value;
         inputsMethods(inst);
         drowFunction(inst, ctx);
@@ -162,22 +162,35 @@ let createEventInputs = (inst, drowFunction, ctx, drowSVGimage) => {
 
     //Поля выбора системы
     let addNewSystem_select = document.querySelectorAll("[fid]")[inst.id.slice(-1) - 2].querySelectorAll(".systemBlock select");
-    let allInputsSelect = document.querySelectorAll("[fid]")[inst.id.slice(-1) - 2].querySelectorAll("systemBlock *");
-    debugger
+    let allInputsSelect = document.querySelectorAll("[fid]")[inst.id.slice(-1) - 2].querySelectorAll(".systemBlock *");
     for (let i = 0; i < allInputsSelect.length; i++) {
         allInputsSelect[i].style.display = "block";
     }
+    //Обновление данных о системах в inst
+    let updateSystemLenght = () => {
+        inst.systemSLenght = [];
+        for (let x = 0; x < addNewSystem_select.length; x++) {
+            if (addNewSystem_select[x].value != "Нет системы") {
+                inst.systemSLenght.push(addNewSystem_select[x].value);
+            }
+        }
+        drowFunction(inst, ctx);
+        drowSVGimage(inst, ctx, drowFunction);
+    }
+
     addNewSystem_select.forEach(el => {
-        el.addEventListener("change", function() {
-            let addNewSystem_select_array = [];
-            addNewSystem_select.forEach(el => addNewSystem_select_array.push(el));
-
-            let index = addNewSystem_select_array.indexOf(el);
-            inst.systemSLenght[index] = el.value;
-            inst;
-
+        el.addEventListener("change", function () {
+            updateSystemLenght();
         })
     })
+
+    //Выбор режима при загрузке калькулятора
+    updateSystemLenght();
+    if (inst.systemSLenght != 0) {
+        inst.drowMethod = "manual_system";
+    } else {
+        inst.drowMethod = "mechanical";
+    }
 
     //Скрывать или показывать поля, в зависимости от типа расчёта
     let addNewSystem_block = document.querySelectorAll("[fid]")[inst.id.slice(-1) - 2].querySelectorAll(".systemBlock");
@@ -197,9 +210,15 @@ let createEventInputs = (inst, drowFunction, ctx, drowSVGimage) => {
                 break
             case "manual_system":
                 addNewSydtem_button.style.display = "block";
-                removeNewSydtem_button.style.display = "none";
+                if (inst.systemSLenght.length > 1) {
+                    removeNewSydtem_button.style.display = "block";
+                } else {
+                    removeNewSydtem_button.style.display = "none";
+                }
+                
                 firstSystem_block.style.display = "block";
-                for (let n = 0; n < addNewSystem_block.length; n++) {
+                let systemCount = inst.systemSLenght.length
+                for (let n = systemCount - 1; n < addNewSystem_block.length; n++) {
                     addNewSystem_block[n].style.display = "none";
                 }
                 break
@@ -223,8 +242,8 @@ let createEventInputs = (inst, drowFunction, ctx, drowSVGimage) => {
     }
     inputsMethods(inst);
     //События на кнопки добавления систем
-    let ableBlockS = 0; // Количество систем
-    document.querySelectorAll("[fid]")[inst.id.slice(-1) - 2].querySelector(".addNewSydtem_button").addEventListener("click", function() {
+    let ableBlockS = inst.systemSLenght.length; // Количество систем
+    document.querySelectorAll("[fid]")[inst.id.slice(-1) - 2].querySelector(".addNewSydtem_button").addEventListener("click", function () {
         if (ableBlockS != 10) {
             document.querySelectorAll("[fid]")[inst.id.slice(-1) - 2].querySelector(".removeNewSydtem_button").style.display = "block";
             ableBlockS++;
@@ -238,11 +257,11 @@ let createEventInputs = (inst, drowFunction, ctx, drowSVGimage) => {
         }
 
     });
-    document.querySelectorAll("[fid]")[inst.id.slice(-1) - 2].querySelector(".removeNewSydtem_button").addEventListener("click", function() {
-        if (ableBlockS != 0) {
+    document.querySelectorAll("[fid]")[inst.id.slice(-1) - 2].querySelector(".removeNewSydtem_button").addEventListener("click", function () {
+        if (ableBlockS != 1) {
             ableBlockS--;
         }
-        if (ableBlockS == 0) {
+        if (ableBlockS == 1) {
             document.querySelectorAll("[fid]")[inst.id.slice(-1) - 2].querySelector(".removeNewSydtem_button").style.display = "none";
         }
 
@@ -252,6 +271,10 @@ let createEventInputs = (inst, drowFunction, ctx, drowSVGimage) => {
         for (let x = 1; x <= ableBlockS; x++) {
             addNewSystem_block[x - 1].style.display = "block";
         }
+        for (let x = ableBlockS; x < addNewSystem_block.length; x++) {
+            addNewSystem_block[x].querySelector("select").value = "Нет системы";
+        }
+        updateSystemLenght();
     });
 };
 

@@ -2,6 +2,7 @@ import createTwo_dimensional from "./createTwo_dimensional";
 import drowVerticalLines from "./drowVerticalLines";
 import correctWidthTurn from "./correctWidthTurn";
 import createAll_demensional from "./createAll_demensional";
+import correspondSystemAndLenght from "../../../correspondSystemAndLenght";
 
 
 let createProkladkaLineVertical = (inst, ctx, propX, roundGranMas) => {
@@ -16,6 +17,7 @@ let createProkladkaLineVertical = (inst, ctx, propX, roundGranMas) => {
         xArray.push(roundGranMas[i].X);
     }
 
+
     let two_dimensionalS = createTwo_dimensional(xArray, roundGranMas, widthTurn);
 
     // Проверяем на четность витков, увеличиваем ширину витков, если нечёт
@@ -26,7 +28,12 @@ let createProkladkaLineVertical = (inst, ctx, propX, roundGranMas) => {
     }
 
 
-    let systemSLenght = [84000, 7000]; // все длины систем
+    let fdfasdf = inst.systemSLenght;
+    let fsssfs = correspondSystemAndLenght("XLPIPE-010");
+    let sdgsdfgsd = correspondSystemAndLenght(inst.systemSLenght[0]);
+     
+    let systemSLenght = inst.systemSLenght.map(el => correspondSystemAndLenght(el)); // все длины систем
+     
     let two_dimensionalAll = createAll_demensional(xArray, roundGranMas, propX, widthTurn, two_dimensionalS, systemSLenght);
 
     let two_dimensionalAll_last = two_dimensionalAll[two_dimensionalAll.length - 1];
